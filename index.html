@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="squares">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <button class="button">Change color</button>
+
+    <script>
+      let btn = document.querySelector(".button");
+
+      function getRandomColor() {
+        return Math.ceil(Math.random() * 255);
+      }
+
+      btn.addEventListener("click", function () {
+        let color = getRandomColor();
+
+        let squares = document.querySelectorAll(".square");
+
+        for (let square of squares) {
+          square.style.background = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+        }
+      });
+    </script>
+  </body>
+</html>

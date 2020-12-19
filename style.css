@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.squares {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background: #777;
+}
+button {
+  background: green;
+  padding: 10px 15px;
+  color: #777;
+  border: none;
+}
